@@ -1,0 +1,17 @@
+.parent {
+    border: 2px solid red;
+    display: grid;
+    /* grid-template-columns: 1fr 1.5fr 1fr;
+            grid-template-rows: 100px 200px; */
+    grid: 1fr 1.5fr 1fr/ 1fr 1fr;
+    /* grid-column-gap: 30px;
+            grid-row-gap: 30px; */
+    grid-gap: 30px;
+}
+
+.parent>div {
+    border: 2px solid white;
+    background-color: gray;
+    font-size: 2em;
+    text-align: center;
+}
