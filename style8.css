@@ -1,0 +1,39 @@
+.parent {
+    border: 2px solid white;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas: 'header header header header'
+        'nav section section aside'
+
+        'nav footer footer footer';
+}
+
+.parent>div {
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid;
+    padding: 10px;
+}
+
+.header {
+    grid-area: header;
+
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.section {
+    grid-area: section;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.footer {
+    grid-area: footer;
+}
